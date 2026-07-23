@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Faith Cleaning Services LLC</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section class="top" id="home">
+        <img src="img/fcsllclogo.avif" alt="logo" id="logo">
+        <h1 id="title">Faith Cleaning Services LLC</h1>
+        <p id="title-description">We are a commercial cleaning company that is 
+            driven by our faith and a desire to keep professional spaces professional. 
+            <br>We are focused on delivering an experience and attention to detail that other 
+            many cleaning services often overlook.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Interested in getting more information?</p>
+        <p>Call, text, or email Codey.</p>
+        <p>(920) 277-2965 </p>
+        <p><a href="mailto:Codey@faithcleaningservices.org" target="_blank">Codey@faithcleaningservices.org</a></p>
+    </section>
+
+    <section class="services" id="services">
+        <div class="gallery-item">
+            <img src="img/moving.jpg" alt="moving" width="600" height="400" 
+            onclick="openModal('modal1', 'Move in / Move out cleans', 'Are you moving out of your apartment and need a reliable cleaning service to save you time and money? Are you looking to sell your house and want to showcase the true potential? Get in contact with us today to schedule a consultation!')">
+            <div class="img-description">Move in / Move out cleans</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/construction.jpg" alt="construction" width="600" height="400"
+            onclick="openModal('modal2', 'Post construction cleans', 'Is your business going through a remodel? Skip the hassle of cleaning up the dust and debris, contact us and get your business looking as good as you imagined!')">
+            <div class="img-description">Post construction cleans</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/janitor.jpg" alt="janitorial" width="600" height="400"
+            onclick="openModal('modal3', 'Janitorial cleaning', 'Let us take care of your cleaning needs and keep your business looking professional around your schedule! Contact us today to get next steps so you can free your team up for more important things!')">
+            <div class="img-description">Janitorial cleaning</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/apartment.jpg" alt="property" width="600" height="400"
+            onclick="openModal('modal4', 'Property cleans', 'Are you a property manager looking for someone to maintain hallways and keep the public areas of your businesses clean? Look no further! Send us an email today to schedule a quote!')">
+            <div class="img-description">Property cleans</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/project.jpg" alt="project" width="600" height="400"
+            onclick="openModal('modal5', 'Special projects', 'We also take care of a wide variety of special projects ranging from carpet cleaning, to exterior window washing! Contact us for further information on any projects you may need!')">
+            <div class="img-description">Special projects</div>
+        </div>
+
+        <div id="modal1" class="modal" onclick="closeModal('modal1')">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-content">
+                <img src="img/moving.jpg" alt="moving" class="modal-image">
+                <div class="caption"></div>
+                <div class="caption-description"></div>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal" onclick="closeModal('modal2')">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-content">
+                <img src="img/construction.jpg" alt="construction" class="modal-image">
+                <div class="caption"></div>
+                <div class="caption-description"></div>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal" onclick="closeModal('modal3')">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="modal-content">
+                <img src="img/janitor.jpg" alt="janitorial" class="modal-image">
+                <div class="caption"></div>
+                <div class="caption-description"></div>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal" onclick="closeModal('modal4')">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <div class="modal-content">
+                <img src="img/apartment.jpg" alt="property" class="modal-image">
+                <div class="caption"></div>
+                <div class="caption-description"></div>
+            </div>
+        </div>
+
+        <div id="modal5" class="modal" onclick="closeModal('modal5')">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <div class="modal-content">
+                <img src="img/project.jpg" alt="project" class="modal-image">
+                <div class="caption"></div>
+                <div class="caption-description"></div>
+            </div>
+        </div>
+
+        <script>
+            function openModal(modalId, caption, description) {
+                let modal = document.getElementById(modalId);
+                modal.style.display = "flex";
+                modal.classList.add("show");
+                let title = modal.querySelector(".caption");
+                title.innerText = caption;
+                let message = modal.querySelector(".caption-description");
+                message.innerText = description;
+            }
+
+            function closeModal(modalId) {
+                let modal = document.getElementById(modalId);
+                modal.classList.remove("show");
+                setTimeout(function () {
+                    modal.style.display = "none";
+                    modal.querySelector(".caption").innerText = "";
+                    modal.querySelector(".caption-description").innerText = "";
+                }, 300);
+            }
+        </script>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-box">
+            <h2>Experienced Commercial Cleaning Service</h2>
+            <p>Faith Cleaning Services LLC is a commercial cleaning company that is driven 
+                by faith and a desire to keep customer spaces spotless. 
+                Our commitment to excellence and customer satisfaction sets us 
+                apart in the industry.</p>
+        </div>
+        <div class="about-box">
+            <h2>Our Commitment To Quality</h2>
+            <p>At Faith Cleaning Services LLC, we understand the importance of a clean and 
+                inviting workspace. Our team is dedicated to handling all the cleaning work, 
+                allowing you to focus on your business without worrying about the cleanliness 
+                of your premises. We take pride in our attention to detail and go the extra 
+                mile to ensure that every corner is spotless. Our goal is to provide a 
+                cleaning experience that surpasses your expectations, setting us apart from 
+                other cleaning services.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2026 FaithCleaningServicesLLC. All rights reserved.</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/people/Faith-Cleaning-Services-LLC/61574446737322/" 
+            target="_blank" id="facebook" width="1" height="1"></a>
+        </div>
+        <div class="footer-right">
+            <p>(920) 277-2965 <br><br> Codey@faithcleaningservices.org</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
