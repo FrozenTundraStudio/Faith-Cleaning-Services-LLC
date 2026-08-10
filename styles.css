@@ -110,8 +110,9 @@ ul li a:hover {
     background-image: linear-gradient(to right, lightgray, aliceblue, lightgray);
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
     transition: transform 0.5s ease;
-    padding-bottom: 1vh;
 }
+
+
 
 .gallery-item:hover {
     transform: scale(1.1);
@@ -131,6 +132,12 @@ ul li a:hover {
     width: 100%;
     height: auto;
     margin: auto;
+    padding-bottom: 1vh;
+}
+@media screen and (max-width: 768px) {
+    .gallery-item {
+        padding-bottom: 2vh;
+    }
 }
 
 /* Modal */
@@ -205,7 +212,6 @@ ul li a:hover {
     cursor: pointer;
     transition: transform 0.3s;
 }
-
 
 /* About */
 .about {
