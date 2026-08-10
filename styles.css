@@ -206,17 +206,6 @@ ul li a:hover {
     transition: transform 0.3s;
 }
 
-@media screen and (max-width: 768px) {
-    .gallery-item {
-        width: calc(50% - 20px);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .gallery-item {
-        width: calc(100% - 20px);
-    }
-}
 
 /* About */
 .about {
