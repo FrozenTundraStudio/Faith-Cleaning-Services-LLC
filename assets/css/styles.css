@@ -1,3 +1,9 @@
+html {
+    background-image: url("/assets/img/windowcleaning.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 body {
     min-width: 100vw;
     min-height: 100vh;
@@ -5,10 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Georgia, serif;
-    background-image: url("img/windowcleaning.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     overflow-x: hidden;
+    background-color: rgba(156, 153, 153, 0.5);
 }
 
 /* Navigation */
@@ -98,7 +102,7 @@ ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 5vh;
+    margin: auto;
 }
 
 .gallery-item {
@@ -111,8 +115,6 @@ ul li a:hover {
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
     transition: transform 0.5s ease;
 }
-
-
 
 .gallery-item:hover {
     transform: scale(1.1);
@@ -225,6 +227,7 @@ ul li a:hover {
     max-width: 40rem;
     width: 85%;
     margin: auto;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     padding: 1vw;
     word-wrap: break-word;
@@ -256,7 +259,8 @@ footer p {
     color: white;
     font-size: 2vh;
     text-align: center;
-    
+    margin: 0vh;
+    padding: 0.5vh 0.5vh;
 }
 
 @media (max-width: 768px) {
@@ -265,7 +269,6 @@ footer p {
         margin-right: 3vw;
     }
 }
-
 
 .footer-left {
     width: auto;
@@ -289,7 +292,7 @@ footer p {
 #facebook {
     width: 48px;
     height: 48px;
-    background-image: url(img/spritesheet.png);
+    background-image: url(/assets/img/spritesheet.png);
     background-position: -314px -106px;
     background-repeat: no-repeat;
     display: block;
