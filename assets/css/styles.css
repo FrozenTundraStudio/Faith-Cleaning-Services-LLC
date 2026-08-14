@@ -109,8 +109,8 @@ ul li a:hover {
     margin: 1rem;
     border: 2px solid black;
     border-radius: 5px;
-    max-width: 20rem;
-    min-width: 20rem;
+    max-width: 30rem;
+    min-width: 30rem;
     background-image: linear-gradient(to right, lightgray, aliceblue, lightgray);
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
     transition: transform 0.5s ease;
@@ -292,7 +292,7 @@ footer p {
 #facebook {
     width: 48px;
     height: 48px;
-    background-image: url(/assets/img/spritesheet.png);
+    background-image: url(/Faith-Cleaning-Services-LLC/assets/img/spritesheet.png);
     background-position: -314px -106px;
     background-repeat: no-repeat;
     display: block;
