@@ -109,8 +109,9 @@ ul li a:hover {
     margin: 1rem;
     border: 2px solid black;
     border-radius: 5px;
-    max-width: 30rem;
-    min-width: 30rem;
+    max-width: 25rem;
+    min-width: 25rem;
+    height: 25rem;
     background-image: linear-gradient(to right, lightgray, aliceblue, lightgray);
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
     transition: transform 0.5s ease;
