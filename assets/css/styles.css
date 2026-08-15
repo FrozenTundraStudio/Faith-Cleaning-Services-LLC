@@ -1,5 +1,5 @@
 html {
-    background-image: url("/Faith-Cleaning-Services-LLC/assets/img/windowcleaning.jpg");
+    background-image: url("/assets/img/windowcleaning.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -292,7 +292,7 @@ footer p {
 #facebook {
     width: 48px;
     height: 48px;
-    background-image: url(/Faith-Cleaning-Services-LLC/assets/img/spritesheet.png);
+    background-image: url(/assets/img/spritesheet.png);
     background-position: -314px -106px;
     background-repeat: no-repeat;
     display: block;
